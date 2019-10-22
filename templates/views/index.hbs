@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Cotacoes</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            {{> header}}
+
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/help">Help</a>
+        </header>
+        <div>
+            <input id="stockQueryField" type="text">
+            <button onclick="fetchQueryStock()">Query</button>
+            <div id="stockQueryResult" class="query-result">
+        </div>
+    </div>
+    <footer>
+        {{> footer}}
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
